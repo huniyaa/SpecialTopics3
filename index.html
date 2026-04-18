@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Special Topics: 3D Design & Physical Computing Winter 2025</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {
+  font-family: "Poppins", sans-serif
+  }
+body {
+  font-size:16px;
+  }
+h1 { 
+  font-size:30px;
+  }
+h2 {
+  font-size:25px;
+  }
+  h3 {
+  font-size:18px;
+  }
+img {
+  width: 100%;
+  height: 100%;
+}
+.grid {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+}
+.w3-half img{
+  margin-bottom:-6px;
+  margin-top:16px;
+  opacity:0.8;
+  cursor:pointer
+  } */
+.w3-half img:hover{
+  opacity:1
+  }
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:200px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-display-topleft" style="display:none;font-size:22px"></a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>IXD<br>DESN 34665<br> Winter 2025</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#Home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#Intro" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a>
+    <a href="#Module1" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Module 1 Research</a> 
+    <a href="#ProjectConcept" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Project 1 Concept</a>
+    <a href="#Module2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Module 2 Research</a> 
+    <a href="#ProjectPrototype" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Project 2 Prototype and Research</a> 
+    <a href="#Module3" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Module 3 research</a>  
+    <a href="#ProjectProduct" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Project 3 Product</a> 
+    <a href="#ResearchSummation" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Research Summation</a> 
+    <a href="#Reflection" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Reflection</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens
+<header class="w3-container w3-top w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Menu</span>
+</header> -->
+
+<!-- 
+  if you want to link your image to a video use one of the following alt links as an example:
+
+  alt="test1Lorem ipsum dolor sit amet, consectetur adipiscing elit test1Lorem ipsum dolor sit amet, consectetur adipiscing elit <a href='https://www.youtube.com/embed/tgbNymZ7vqY' target='_blank'><p>Project Video Link</p></a>"> 
+  alt="test2Lorem ipsum dolor sit amet, consectetur adipiscing elit <div class='container'><iframe class='responsive-iframe' src='https://www.youtube.com/embed/tgbNymZ7vqY'></iframe></div>">
+
+-->
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:220px;margin-right:20px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="default">
+    <h1 class="w3-jumbo" id="Home"><b>Special Topics Case Study</b></h1>
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Research & Activity Documentation</b></h1>
+      <h1 class="w3-xxxlarge w3-text-blue"><b>Haniya Butt</b></h1>
+    <hr style="width:50px;border:5px solid grey" class="w3-round">
+  </div>
+  <!-- Intro -->
+  <div id="Intro" class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Introduction</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h3> A Gamified Pomodoro timer that encourages users to work by rewarding their focus with a digital reward, a plant collection
+    </h3>
+  </div>
+ <!-- Project 1-->
+  <div id="Module1" class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Module 1: Concept</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h2>Research</h2>
+    <h3>Research done for this porject was researching the different routes I could take and the kinds of softwares or programs I could use
+    </h3>
+  </div>
+  
+  <!-- Module 1 Photo grid (modal) -->
+  <div id="M1A1" >
+    <h2>Action Research Phase 1</h2>
+    <div class="grid">
+      <img src="images/M1A1/m1.png" style="width:100%" onclick="onClick(this)" alt="Starting off with learning Figma; i had to quickly change course to use Claude "> 
+      <img src="images/M1A1/m2.png" style="width:100%" onclick="onClick(this)" alt="I fed my wireframes to Claude but there was an issue: the 3D model would not load">
+      <img src="images/M1A1/m3.png" style="width:100%" onclick="onClick(this)" alt="Troubleshooting; there was a problem with the hardware accelerator">
+    </div>
+  </div>
+  
+  <hr style="width:90%;border:5px solid grey;margin-top:80px" class="w3-round"></hr>
+
+  <div id="M1A2" class="w3-row-padding">
+    <h2>Action Research Phase 2</h2>
+    <div class="grid">
+      <img src="images/M1A2/m4.png" style="width:100%" onclick="onClick(this)" alt="I am finally able to view the 3D Models">
+      <img src="images/M1A2/m5.gif" style="width:100%" onclick="onClick(this)" alt="How it was working at this stage">
+      <img src="images/M1A2/m6.gif" style="width:100%" onclick="onClick(this)" alt="Adding my original wireframe texture to the website">
+    </div>
+  </div>
+ <!-- Project 1 Concept -->
+  <div id="ProjectConcept" class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Project 1: Concept</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h3>This was my final concept for the project I wanted to create
+    </h3>
+    <img src="images/final1/project1final.png" style="width:100%" onclick="onClick(this)" alt="test2Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+  </div>
+
+  <hr style="width:90%;border:5px solid grey;margin-top:80px" class="w3-round"></hr>
+ <!-- Project 2-->
+  <div id="Module2" class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Module 2: Prototype</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h2>Research</h2>
+    <h3>Learning Modeling and Animating on Spline. Creating wireframes for my website. 
+    </h3>
+  </div>
+  
+  <!-- Module 2 Photo grid (modal) -->
+  <div id="M2A1" >
+    <h2>Action Research Phase 1</h2>
+    <div class="grid">
+      <img src="images/M2A1/tm1.png" style="width:100%" onclick="onClick(this)" alt="Made the background transparent by making the opacity 0%"> 
+      <img src="images/M2A1/tm2.png" style="width:100%" onclick="onClick(this)" alt="Adjusting the export options for optimized viewing on the webpage">
+      <img src="images/M2A1/tm3.jpg" style="width:100%" onclick="onClick(this)" alt="The background is now gone.">
+    </div>
+  </div>
+  
+  <hr style="width:90%;border:5px solid grey;margin-top:80px" class="w3-round"></hr>
+
+  <div id="M2A2" class="w3-row-padding">
+    <h2>Action Research Phase 2</h2>
+    <div class="grid">
+      <img src="images/M2A2/tm4.png" style="width:100%" onclick="onClick(this)" alt="Creating toggle transitions">
+      <img src="images/M2A2/tm5.gif" style="width:100%" onclick="onClick(this)" alt="Adding and Adjusting the base states; Adding them onto each watering can">
+      <img src="images/M2A2/tm6.gif" style="width:100%" onclick="onClick(this)" alt="Adding my original wireframe texture to the website">
+    </div>
+  </div>
+
+  <hr style="width:90%;border:5px solid grey;margin-top:80px" class="w3-round"></hr>
+
+  <!-- Project 2 Prototype -->
+  <div id="ProjectPrototype" class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Project 2: Prototype</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+     <h2>Prototype Research and Development</h2>
+    <p>The Spline Animation Embedded (viewer is not meant to be moved, interact with objects ONLY)
+    </p> 
+    <ol>
+      <li>Click the top watering can and drop it in the plant for the full uncontrolled animation
+      </li>
+      <li>REFRESH PAGE</li>
+      <li>Click the bottom watering each time you want it to grow
+      </li>
+    </ol>
+    <div class="spline-container">
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.70/build/spline-viewer.js"></script>
+  <spline-viewer url="https://prod.spline.design/qCQc8sx4v5OMPayy/scene.splinecode"></spline-viewer>
+  </div>
+
+  <hr style="width:90%;border:5px solid grey;margin-top:80px" class="w3-round"></hr>
+ <!-- Project 3-->
+  <div id="Module3" class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Module 3: Product</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h2>Research</h2>
+    <h3>PLACEHOLDER TEXT, put an introduction to your module 3 research here
+    </h3>
+  </div>
+  
+  <!-- Module 3 Photo grid (modal) -->
+  <div id="M3A1" >
+    <h2>Action Research Phase 1</h2>
+    <div class="grid">
+      <img src="images/M3A1/hm1.png" style="width:100%" onclick="onClick(this)" alt="Looking for sound sources"> 
+      <img src="images/M3A1/hm2.gif" style="width:100%" onclick="onClick(this)" alt="Troubleshooting the sounds with Claude">
+      <img src="images/M3A1/hm3.png" style="width:100%" onclick="onClick(this)" alt="The instruction is getting in the way of the animation; this was revealed with further testing">
+    </div>
+  </div>
+  
+  <hr style="width:90%;border:5px solid grey;margin-top:80px" class="w3-round"></hr>
+
+  <div id="M3A2" class="w3-row-padding">
+    <h2>Action Research Phase 2</h2>
+    <div class="grid">
+      <img src="images/M3A2/hm4.png" style="width:100%" onclick="onClick(this)" alt="Finding image errors in code">
+      <img src="images/M3A2/hm5.png" style="width:100%" onclick="onClick(this)" alt="Successfully changing the instruction location and interactivity">
+      <img src="images/M3A2/hm6.png" style="width:100%" onclick="onClick(this)" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+    </div>
+  </div>
+
+  <hr style="width:90%;border:5px solid grey;margin-top:80px" class="w3-round"></hr>
+
+  <!-- Project 3 Product -->
+  <div id="ProjectPrototype" class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Project Product</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>My final website is a gamified pomodoro timer that encourages users to work by rewarding their focus with their own digital plant. 
+    </p>
+    <img src="images/final3/finalproject3.png" style="width:100%" onclick="onClick(this)" alt="test2Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+  </div>
+
+  <hr style="width:90%;border:5px solid grey;margin-top:80px" class="w3-round"></hr>
+
+  <!-- Research Summation -->
+  <div id="ResearchSummation" class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Research Summation</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>PLACEHOLDER TEXT, replace this with a paragraph of your final reflection documentation
+    </p>
+  </div>
+
+  <!-- Final Reflection -->
+  <div id="Reflection" class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Reflection</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Throughout this course, I really learned how to use Spline. 
+      It was rough in the beginning, but over time it became very intuitive.
+       I’ve learned that Spline is really great for building tools quickly, 
+       especially within short time frames. However, its simplicity can also be limiting, 
+       as the program gets overwhelmed very easily which can then affect the performance. <br><br>
+       I also learned more about using Claude. While it was efficient it had ways of doing 
+       things that seemed more complex than they should. I was also able to learn the 
+       very basics of Framer, which was useful as a starting point for exploring 
+       other tools in the future.<br><br>
+       Overall, this project made me much more confident in my ability to use 3D assets
+        and implement them in a meaningful way.
+    </p>
+  </div>
+  
+   <!-- Modal for full size images on click-->
+   <div id="modal01" class="w3-modal w3-grey" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-center w3-transparent" style ="padding:20px">
+      <img id="img01" class="w3-image">
+      <h2 id="caption"></h2>
+
+      <!-- <div id="urLink"></div> -->
+      <!-- <a id="urLink" class="container"><iframe class="responsive-iframe"></iframe></a> -->
+    <!-- </div> -->
+  </div>
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+
+  // var captionUrl = document.getElementById("urLink");
+  // captionUrl.innerHTML = element.url;
+
+  //document.getElementById("urLink").src = element.url;
+}
+</script>
+
+</body>
+</html>
